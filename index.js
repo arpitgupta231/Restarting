@@ -18,6 +18,17 @@ app.get("/user",(req,res)=>{
     })
 })
 
+app.post("/register",(req,res)=>{
+    const {name,email}= req.body;
+    res.json({
+        "message": "User registered successfully",
+        "user": {
+            name,
+            email
+        }
+    })
+})      
+        
 app.listen(3000, ()=>{
     console.log("server is running");
 })
