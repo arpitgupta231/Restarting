@@ -1,0 +1,71 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+}
+
+.card{
+    margin-left:500px;
+    margin-top: 50px;
+    height: 75vh;
+    width: 22vw;
+    border:2px;
+    border-style: solid;
+    border-color: rgb(198, 198, 198);
+    border-radius: 10px;
+    position: absolute;    
+    box-shadow: 0px 0px 20px;
+    background-color: antiquewhite;
+}
+
+img{
+    height: auto;
+    width: 252px;
+    margin-left: 15px;
+    margin-top: 18px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 13px ;
+    display: block;
+}
+
+.category{
+    border: 2px;
+    border-style: solid;
+    padding: 6px;
+    border-color: rgb(179, 179, 179);
+    border-radius:60px;
+    margin: 4px;
+    display: inline-block;
+    font-size:small ;
+    color:grey;
+    margin-right:0px;
+    margin-top: 10px;
+}
+
+.cat1{
+    margin-left: 20px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+p{
+    margin:20px;
+    margin-top: 7px;
+    text-align:justify;
+    color:grey;
+    margin-bottom: 10px;
+}
+
+
+.readmore{
+    background-color: rgb(238, 209, 115);
+    color: rgb(165, 127, 0);
+    border: 0px;
+    padding: 8px;
+    margin:95px;
+    margin-top: 0px;
+}
