@@ -7,7 +7,7 @@
 }
 
 .card{
-    margin-left:500px;
+    margin-left:45px;
     margin-top: 50px;
     height: 75vh;
     width: 22vw;
@@ -68,4 +68,9 @@ p{
     padding: 8px;
     margin:95px;
     margin-top: 0px;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: red;
 }

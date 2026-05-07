@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Colour Website</title>
+
+    <style>
+
+         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital@0;1&display=swap');
+        :root{
+            --primcolour:rgb(155, 8, 8);
+            --seccolour:rgb(21, 20, 20);
+            --textcolour:rgb(215, 211, 211);
+        }
+        *{
+            margin: 0px;
+            padding:0px
+        }
+
+        body{
+            background-color: var(--seccolour);
+        }
+
+        .navbar{
+            background-color: var(--primcolour);
+            box-shadow: 0px 9px 20px ;
+        }
+
+        ul{
+            list-style: none;
+             display: flex;
+            justify-content: right;
+            margin-right: var(--defpad);
+            margin-right: 40px;
+        }
+
+        ul li{
+            color: var(--textcolour);
+            padding:19px;
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li class="abt">About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>
