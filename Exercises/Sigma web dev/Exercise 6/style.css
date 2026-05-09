@@ -1,0 +1,36 @@
+*{
+    margin: 0px;padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    height: 88px;
+    margin: 20px;
+    background-color: rgb(239, 238, 238) ;
+    border: 1px solid grey;
+    border-radius: 5px;
+    gap: 32px;
+    justify-content: space-between;
+} 
+
+.ultraedit{
+    margin-left: 20px;
+    align-self: center;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.download{
+    align-self: center  ;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgb(234, 234, 3);
+    border-radius: 5px;
+}
