@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background-color: black;
+        }
+
+        .container {
+            /* margin-left: 40px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .card {
+            display: flex;
+            background-color: rgb(31, 30, 30);
+            height: 130px;
+            width: 76vw;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+         
+        .image{
+            align-self: center;
+            margin:0px 10px 0px 10px;
+            display: flex;
+        }
+
+        .image img{
+            /* margin:15px 10px 10px 10px; */
+            height: 100px;
+            align-self: center;
+            border-radius: 5px;
+            
+        }
+
+        .duration {
+            background-color: black;
+            font-size:small;
+            line-height: 1.5rem;
+            font-weight: 500;
+            position: absolute;
+            border-radius: 5px;
+           
+            align-self: flex-end;
+            margin-left: 142px;
+            margin-bottom: 4px;
+            padding:2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ"
+                    alt="">
+                <div class="duration">31:20</div>
+            </div>
+            <div class="metadata">
+                <h3 class="title">JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73</h3>
+                <span class="channnel">Codewithharry </span>
+                <span> • </span>
+                <span class="views">760K</span>
+                <span> • </span>
+                <span class="months">2 Months old</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
