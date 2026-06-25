@@ -1,0 +1,55 @@
+.border {
+    border: 2px solid grey;
+    margin: 2px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.filter {
+    filter: invert(1);
+}
+
+.selected {
+    background-color: hsl(240deg 1.05% 18.63%);
+    color: hsl(353.33deg 94.19% 66.27%);
+}
+
+.rounded {
+    border-radius: 9px;
+}
+
+.m-1 {
+    margin: 8px;
+}
+
+.grey {
+    color: hsl(240deg 0.63% 68.82%);
+    ;
+}
+
+.fw {
+    font-weight: 100;
+}
+
+.p1 {
+    padding: 8px;
+}
+
+.p2 {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
