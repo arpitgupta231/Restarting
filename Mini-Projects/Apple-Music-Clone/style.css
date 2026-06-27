@@ -16,18 +16,20 @@ body {
 .sidebar {
     position: sticky;
     top: 8px;
+    align-self: flex-start;
     flex-direction: column;
-    width: 18vw;
+    width: 25vw;
     padding: 20px 10px 20px 10px;
     border-radius: 20px;
     height: 90vh;
     border: 1px solid #303030;
     box-shadow: 0px 0px 5px 2px #303030;
     overflow: hidden;
+    background-color:rgb(36, 36, 36); ;
 }
 
 .right {
-    width: 82vw;
+    width: 75vw;
     position: relative;
 }
 
@@ -182,7 +184,14 @@ body {
     display: flex;
     gap: 10px;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.cardContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
@@ -192,6 +201,7 @@ body {
     margin-top: 10px;
     height: 290px;
     width: 220px;
+    flex-shrink: 0;
     background-image: url("./Covers/station.webp");
     justify-content: flex-end;
     gap: 2px;
@@ -233,21 +243,19 @@ body {
 
 .player {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     background: rgba(255, 255, 255, 0.1);
     /* transparent white tint */
     backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(7px);
     width: 50vw;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 8px 0px 8px;
-    left: 60%;
-    transform: translateX(-50%);
+    left: 35vw;
     padding: 7px 15px;
     border: 1px solid hsl(0, 0%, 32%);
     border-radius: 50px;
+    z-index: 10;
 }
 
 .player img {
@@ -270,9 +278,10 @@ body {
 
 .song-title {
     display: flex;
-    width: 61vh;
+    width: 27vw;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .seekbar {
@@ -283,6 +292,7 @@ body {
     border-radius: 70px;
     cursor: pointer;
     transition: all 0.1s ease-in;
+    cursor: pointer;
 }
 
 .circle {
@@ -294,7 +304,7 @@ body {
     bottom: 4px;
     opacity: 0;
     transition: all 0.2s ease-in;
-    
+    left: 0%;
 }
 
 .seekbar:hover {
@@ -320,16 +330,38 @@ body {
 }
 
 
-.songtime{
+.song-info {
     display: flex;
-    justify-content: space-between;
-    opacity:0 ;
-    transition: all 0.5s ease-in;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 2px;
+    
 }
 
-.song-title:hover .songtime{
+.songtime {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    padding: 2px 4px;
+    opacity: 0;
+    font-size: 11px;
+    color: #d0d0d0;
+    
+    border-radius: 4px;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+.song-info:hover .songtime {
     opacity: 1;
+}
+
+.song-title:has(.seekbar:hover) .songtime {
+    opacity: 1;
+    transform: translateY(-6px);
 }
 
 .song-name{
@@ -338,4 +370,89 @@ body {
 
 .songlist ul li:hover + li {
     border: none;
+}
+
+.song-info .song-name{
+    position: relative;
+}   
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 30px;
+    align-self: flex-start;
+    margin-bottom: 21px;
+    display: none;  
+    cursor: pointer;  
+}
+
+.logo{
+    justify-content: space-between
+}
+
+@media (max-width:1024px){
+    .sidebar{
+        position: absolute;
+        z-index: 1;
+        transition: all 0.5s;
+        width: 200px;
+        left: -100%;
+        height: calc(90vh - 70px);
+    }
+     
+    .right{
+        width: 93vw;
+    }
+
+    .player{
+        left: 5vw;
+        min-width: calc(92vw - 40px );
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .close{
+        display: block;
+    }
+
+    .cardContainer{
+        padding: 20px 17px;
+    }
+    
+    .song-title{
+        width: 45vw;
+    }
+
+}
+
+@media (max-width:600px){
+    .song-title{
+        width:65vw ;
+    }
+    .rightside :nth-child(2){
+        display: none;
+    }
+    .rightside :nth-child(1){
+        display: none;
+    }
+    .leftside img:not(#play){
+        display: none;
+    }
+
+    .songtime{
+        display: none;
+    }
+
+    .song-name{
+        font-size: 16.5px;
+    }
+
+    .sidebar{
+        width: 80vw;
+    }
 }

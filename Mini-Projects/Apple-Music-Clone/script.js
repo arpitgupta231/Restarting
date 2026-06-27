@@ -21,7 +21,9 @@ const playSong = (track) => {
     currentsong.src = `http://127.0.0.1:3000/Songs/Narcissism/${track}.mp3`
     currentsong.play()
     play.src = "/svg/pause.svg"
-    document.querySelector("")
+    document.querySelector(".song-info").firstElementChild.innerHTML = track
+    document.querySelector(".songtime").firstElementChild.innerHTML = "00:00"
+    document.querySelector(".songtime").lastElementChild.innerHTML = "03:00"
 }
 
 const togglePlay = () => {
@@ -33,6 +35,13 @@ const togglePlay = () => {
         play.src = "/svg/play.svg"
     }
 }
+
+function formatTime(totalSeconds) {
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = Math.floor(totalSeconds % 60);
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
 
 async function main() {
     let songs = await getSongs()
@@ -67,6 +76,25 @@ async function main() {
             e.preventDefault()
             togglePlay()
         }
+    })
+
+    currentsong.addEventListener("timeupdate", () => {
+        document.querySelector(".songtime").firstElementChild.innerHTML = formatTime(currentsong.currentTime)
+        document.querySelector(".songtime").lastElementChild.innerHTML = formatTime(currentsong.duration)
+        document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%"
+    })
+
+    document.querySelector(".seekbar").addEventListener("click", e => {
+        document.querySelector(".circle").style.left = (e.offsetX / e.target.getBoundingClientRect().width) * 100 + "%"
+        currentsong.currentTime = (e.offsetX / e.target.getBoundingClientRect().width) * currentsong.duration
+    })
+
+    document.querySelector(".hamburger").addEventListener("click",()=>{
+        document.querySelector(".sidebar").style.left = 0
+    })
+
+    document.querySelector(".close").addEventListener("click",()=>{
+        document.querySelector(".sidebar").style.left = -100 + "%"
     })
 
 }
