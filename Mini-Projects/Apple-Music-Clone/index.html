@@ -47,46 +47,33 @@
                 <img src="svg/hamburger.svg" alt="" class="hamburger filter">
                 <h1>Home</h1>
             </div>
-            <div class="top-picks p2">
-                <h4>Top Picks for You</h4>
+            <div class="collections">
+                <h3>Top Picks for You</h3>
                 <div class="cardContainer">
-                    <div class="card">
+                    <div data-folder="all-songs" class="card">
                         <div class="play">
                             <img src="svg/play.svg" alt="">
                         </div>
                         <p>Made for You</p>
                         <h4>Your Station</h4>
                     </div>
-                    <div class="card">
+                    <div data-folder="i-wish-u-were-here" class="card">
                         <div class="play">
                             <img src="svg/play.svg" alt="">
                         </div>
-                        <p>Made for You</p>
-                        <h4>Your Station</h4>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <img src="svg/play.svg" alt="">
-                        </div>
-                        <p>Made for You</p>
-                        <h4>Your Station</h4>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <img src="svg/play.svg" alt="">
-                        </div>
-                        <p>Made for You</p>
-                        <h4>Your Station</h4>
-                    </div>
-                    <div class="card">
-                        <div class="play">
-                            <img src="svg/play.svg" alt="">
-                        </div>
-                        <p>Made for You</p>
-                        <h4>Your Station</h4>
+                        <p></p>
+                        <h4>New Realeased</h4>
                     </div>
                 </div>
             </div>
+            <div class="collections">
+                <h3>Your Albums</h3>
+                <div class="cardContainer">
+                    
+
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="player">
@@ -110,10 +97,26 @@
             </div>
         </div>
         <div class="rightside">
-            <img src="svg/lyrics.svg" alt="">
-            <img src="svg/queue.svg" alt="">
-            <img src="svg/vol-icon.svg" alt="">
+            <img src="svg/lyrics.svg" alt="" id="lyrics">
+            <img src="svg/queue.svg" alt="" id="queue">
+            <div class="volume">
+                <img src="svg/vol-icon.svg" alt="">
+                <input class="volume-bar" type="range">
+            </div>
         </div>
+    </div>
+    <div class="history">
+        <div class="logo flex">
+            <h3>History</h3>
+            <img src="svg/close.svg" alt="" class="close filter">   
+        </div>
+        <div class="library m-1">
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>

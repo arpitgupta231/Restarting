@@ -31,6 +31,7 @@ body {
 .right {
     width: 75vw;
     position: relative;
+    min-height: 150vh
 }
 
 .sidebar li:hover {
@@ -182,7 +183,7 @@ body {
 
 .cardContainer {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
@@ -229,7 +230,7 @@ body {
     margin-right: 10px;
     padding: 3px;
     opacity: 0%;
-    transition: all 0.5 s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .play img {
@@ -267,6 +268,10 @@ body {
     transform: rotate(180deg);
 }
 
+.leftside{
+    align-self: center;
+}
+
 .rightside {
     display: flex;
     gap: 10px;
@@ -292,7 +297,6 @@ body {
     border-radius: 70px;
     cursor: pointer;
     transition: all 0.1s ease-in;
-    cursor: pointer;
 }
 
 .circle {
@@ -323,10 +327,6 @@ body {
 .artist {
     font-size: small;
     color: #4f4f4f;
-}
-
-.player img{
-    cursor: pointer;
 }
 
 
@@ -393,6 +393,165 @@ body {
     justify-content: space-between
 }
 
+.volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.volume-bar{
+    accent-color: white;
+    width: 0;
+    opacity:0;
+    transition: all 0.1s ease-in;
+}
+
+#lyrics,#queue{
+    transition: all 0.1s ease-in;
+}
+
+.collections {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.album-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex-shrink: 0;
+    gap: 12px;
+    cursor: pointer;
+}
+.album-card h4 { 
+    text-align: center;
+}
+.face{
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+.face #face{
+    width: 148px;
+    border-radius: 12px;
+    border: 1px solid #524b4b;
+    box-shadow: 0px 0px 12px 0px #1b1b1b;
+}
+
+.face .play2 {
+    position: absolute;
+    bottom: 35%;
+    padding: 3px;
+    opacity: 0%;
+    transition: all 0.1s ease-in;
+}
+
+.face .play2 img {
+    width: 40px;
+    filter: invert(1);
+}
+
+.album-card:hover .play2{
+    opacity: 100%;
+}
+
+.history{
+    position:fixed;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px;
+    height: 77vh;
+    border: 1px solid #303030;
+    box-shadow: 0px 0px 5px 2px #303030;
+    overflow: hidden;
+    background-color:rgb(36, 36, 36); ;
+    right:-110%;
+    transition: all 0.5s ease-in;
+}
+
+#queue{
+    cursor: pointer;
+}
+
+.history h3{
+    font-size:24px ;
+}
+
+.history .close{
+    display: block  ;
+}
+
+.history ul {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 7px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.history ul::-webkit-scrollbar {
+    width: 4px;
+}
+
+.history ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.history ul::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+}
+
+.history ul li {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    padding: 10px 6px;
+    border-radius: 8px;
+    list-style: none;
+    transition: all 0.3s ease-out;
+}
+
+.history ul li+li {
+    border-top: 1px solid rgb(57, 57, 57);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.history ul li+li:hover {
+    border-radius: 8px;
+}
+
+.history ul li:hover img:last-child {
+    opacity: 1;
+}
+
+.history .info {
+    font-size: medium;
+}
+
+.history ul li:hover {
+    background-color: hsl(240deg 1.05% 18.63%);
+    box-shadow: 0px 0px 8px 0px #0d0d0d;
+}
+
+.history ul li:first-child{
+    margin-top: 2px;
+}
+
 @media (max-width:1024px){
     .sidebar{
         position: absolute;
@@ -428,19 +587,26 @@ body {
         width: 45vw;
     }
 
+    .card {
+        height: 317px;
+        width: 240px;
+    }
+
+    .collections{
+        padding: 20px 10px;
+    }
+
+    .history{
+        width: 50vw;
+    }
 }
 
 @media (max-width:600px){
     .song-title{
-        width:65vw ;
+        width:50vw ;
     }
-    .rightside :nth-child(2){
-        display: none;
-    }
-    .rightside :nth-child(1){
-        display: none;
-    }
-    .leftside img:not(#play){
+
+    .player img:not(#play,#queue,#next){
         display: none;
     }
 
@@ -449,10 +615,44 @@ body {
     }
 
     .song-name{
-        font-size: 16.5px;
+        font-size: 14.5px;
     }
 
     .sidebar{
         width: 80vw;
+    }
+
+    .card {
+        height: 228px;
+        width: 158px;
+    }
+    .cardContainer{
+        gap: 15px;
+    }
+
+    .face #face{
+        width: 120px;
+    }
+
+    .album-card{
+        gap: 5px;
+    }
+
+    .album-card h4{
+        font-size: x-small;
+    }
+
+    .right{
+        min-height:98vh;
+    }
+
+    .play2 {
+        display: none;
+        
+    }
+
+    .history{
+        width: 80vw;
+        height: 85vh;
     }
 }
