@@ -10,8 +10,8 @@
 </head>
 
 <body class="bg-black text-slate-200">
-    <div class="flex container mx-auto max-w-6xl px-20">
-        <div class="first w-3xs ">
+    <div class="flex container mx-auto max-w-7xl lg:px-20">
+        <div class="first w-13 lg:w-45.25 ">
             <div
                 class=" px-3 py-2 logo mb-3.5 hover:bg-zinc-900 rounded-3xl w-fit mt-2.5 transition duration-150 ease-in ">
                 <svg viewBox="0 0 24 24" class="invert w-fit " width="32" height="32" aria-hidden="true"
@@ -25,7 +25,7 @@
                 </svg>
             </div>
             <div class="sidebar">
-                <ul class="flex flex-col p-1.5 space-y-3">
+                <ul class="flex flex-col p-1.5 space-y-3 items-center lg:items-start">
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
                         <svg class="invert w-6 h-6" viewBox="0 0 24 24" aria-hidden="true"
@@ -35,7 +35,7 @@
                                     d="M10.059 2.593c1.175-.784 2.707-.784 3.882 0l6.5 4.333C21.415 7.575 22 8.668 22 9.838V18.5c0 1.933-1.567 3.5-3.5 3.5h-4.25v-5.25c0-1.243-1.007-2.25-2.25-2.25s-2.25 1.007-2.25 2.25V22H5.5C3.567 22 2 20.433 2 18.5V9.838c0-1.17.585-2.263 1.559-2.912l6.5-4.333z">
                                 </path>
                             </g>
-                        </svg>Home
+                        </svg><span class="hidden lg:block">Home</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%]
                    transition duration-0.2 ease-in  hover:rounded-2xl ">
@@ -46,7 +46,7 @@
                                     d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
                                 </path>
                             </g>
-                        </svg>Explore
+                        </svg><span class="hidden lg:block">Explore</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
@@ -58,7 +58,7 @@
                                 </path>
                             </g>
                         </svg>
-                        Notifications
+                        <span class="hidden lg:block w-fit">Notifications</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
@@ -70,7 +70,7 @@
                                 </path>
                             </g>
                         </svg>
-                        Grok
+                        <span class="hidden lg:block">Grok</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
@@ -81,7 +81,7 @@
                                     d="M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm13 4v3h2v-3h3V8h-3V5h-2v3h-3v2h3zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z">
                                 </path>
                             </g>
-                        </svg>Lists
+                        </svg><span class="hidden lg:block">Lists</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
@@ -92,7 +92,7 @@
                                     d="M20.7 11.7c0-4.48-3.844-8.2-8.699-8.2-4.854 0-8.698 3.72-8.698 8.2v.015l-.001.014c-.02.667.09 1.225.25 1.767.083.28.176.545.276.839.098.285.202.595.288.918.177.663.284 1.401.156 2.271-.086.582-.274 1.191-.582 1.855 1.264.375 2.55.053 4.013-.599l.455-.203.437.242c1.07.594 1.917 1.08 3.406 1.08 4.855 0 8.7-3.72 8.7-8.199zm2 0c0 5.683-4.84 10.2-10.699 10.2-1.784 0-2.96-.555-3.95-1.095-1.876.768-4.02 1.2-6.245-.075l-.885-.505.524-.875c.54-.904.77-1.581.848-2.118.078-.526.02-.98-.11-1.463-.066-.25-.15-.502-.247-.788-.095-.277-.204-.59-.301-.92-.199-.674-.36-1.449-.332-2.39C1.322 6.002 6.154 1.5 12.002 1.5c5.859 0 10.7 4.518 10.7 10.2z">
                                 </path>
                             </g>
-                        </svg>Chat
+                        </svg><span class="hidden lg:block">Chat</span>
                     </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
@@ -103,7 +103,7 @@
                                     d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
                                 </path>
                             </g>
-                        </svg>Profile
+                        </svg><span class="hidden lg:block">Profile</span>
                     </li>
                     <li
                         class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%]  hover:rounded-2xl transition duration-0.2 ease-in">
@@ -114,27 +114,156 @@
                                     d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
                                 </path>
                             </g>
-                        </svg>More
+                        </svg><span class="hidden lg:block">More</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="second w-xl border border-zinc-400 border-y-black">bb</div>
+        <div class="second w-165 border border-zinc-700 border-y-black">
+            <div class="sticky top-0 w-full">
+
+                <div class="top flex  h-12 mb-px bg-black">
+                    <div
+                        class="left flex flex-col justify-end items-center w-[45%] h-full hover:bg-zinc-950 cursor-pointer">
+                        <h1 class="font-bold mb-2 ">For You</h1>
+                        <div class="bar h-1 w-[90%] bg-blue-500 rounded-3xl bottom-0x "></div>
+                    </div>
+                    <div class="right flex justify-center items-center w-[45%] h-full hover:bg-zinc-950 cursor-pointer">
+                        <h1 class="font-bold ">Following</h1>
+                    </div>
+                    <div class="settings flex justify-center items-center w-[10%] h-full">
+                        <svg viewBox="0 0 24 24" class="w-4 hover:bg-zinc-950  fill-zinc-700" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1bwzh9t r-10ptun7 r-1janqcz">
+                            <g>
+                                <path d="M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="h-[0.5px] bg-zinc-700 w-full"></div>
+            </div>
+            <div class="newpost flex flex-col">
+                <div class="whathppn flex gep-3 ">
+                    <div class="img m-3">
+                        <img src="https://pbs.twimg.com/profile_images/1463853966572228615/c9lbloQD_400x400.jpg"
+                            class="w-12 rounded-full" alt="">
+                    </div>
+                    <input type="text" class="w-full h-6 mx-2 ml-0 outline-0 mt-5" placeholder="What's Happening?!">
+                </div>
+                <hr class="w-[85%] ml-16 text-zinc-800">
+                <div
+                    class="postbtn font-semibold w-fit px-5 py-1.5 rounded-full my-2 bg-slate-100 text-black self-end mr-7">
+                    Post</div>
+            </div>
+            <hr class="w-full text-zinc-800">
+            <div class="w-full text-blue-500 my-2 flex justify-center items-center cursor-pointer">Show 909 Posts</div>
+            <hr class="w-full text-zinc-800">
+            <div class="posts">
+                <div class="post w-full flex border-b pb-4 border-zinc-800">
+                    <div class="img w-fit m-4 mr-0">
+                        <img src="https://pbs.twimg.com/profile_images/2020017359524691968/PM9cvpU5_400x400.jpg"
+                        class="min-w-12 rounded-full " alt="">
+                    </div>
+                    
+                    <div class="content m-1.5">
+                        <div class="posthead m-1 mb-0 items-center flex justify-between">
+                            <div class="info flex items-center">
+                                <span class="self-start  font-bold hover:underline">World Cup 2026</span><span
+                                    class="text-zinc-600 self-start ml-1"> @ofootball__ · <span class="hover:underline">12h</span></span>
+                            </div>
+                            <div
+                                class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
+                                <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="m-1.5 mt-0">Hey @grok delete the person who was protected and supported by FIFA and UEFA !!</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMoca85acAAanzS?format=jpg&name=medium" alt="">
+                    </div>
+                </div>
+                <div class="post w-full flex border-b pb-4 border-zinc-800">
+                    <div class="img w-fit m-4 mr-0">
+                        <img src="https://pbs.twimg.com/profile_images/2020017359524691968/PM9cvpU5_400x400.jpg"
+                        class="w-12 rounded-full " alt="">
+                    </div>
+                    
+                    <div class="content m-1.5">
+                        <div class="posthead m-1 mb-0 items-center w-full flex justify-between">
+                            <div class="info flex items-center">
+                                <span class="self-start  font-bold hover:underline">Ken</span><span
+                                    class="text-zinc-600 self-start ml-1">@kennethwrii<span class="hover:underline"></span></span>
+                            </div>
+                            <div
+                                class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
+                                <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="m-1.5 mt-0">Which 3 project run is better ??</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMp-JqAWoAAF6pr?format=jpg&name=large" alt="">
+                    </div>
+                </div>
+                <div class="post flex w-full border-b pb-4 border-zinc-800">
+                    <div class="img w-fit m-4 mr-0">
+                        <img src="https://pbs.twimg.com/profile_images/2035239520162258947/9SmWhmgs_400x400.jpg"
+                        class="w-12 rounded-full " alt="">
+                    </div>
+                    
+                    <div class="content m-1.5">
+                        <div class="posthead m-1 mb-0 items-center flex justify-between">
+                            <div class="info flex items-center">
+                                <span class="self-start  font-bold hover:underline">Jainal Momin</span><span
+                                    class="text-zinc-600 self-start ml-1">@JainalMomin<span class="hover:underline">· 9h</span></span>
+                            </div>
+                            <div
+                                class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
+                                <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="m-1.5 mt-0">Hey @Grok can you please tell me how many country's Elon Musk can buy from this much money?</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMsL78tboAAAJ4i?format=jpg&name=large" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="third mt w-md flex flex-col">
             <div class="search flex w-sm py-2 bg-black justify-center sticky top-0">
                 <input type="text" name=""
-                    class="w-[90%] border h-10 border-zinc-700 rounded-2xl px-2  focus:border-4 focus:border-blue-500"
+                    class="w-[90%] border h-10 border-zinc-700 rounded-2xl px-2  focus:border-3 focus:border-blue-500 outline-0"
                     placeholder="Search" id="">
             </div>
             <div class="prem flex flex-col border border-zinc-700 rounded-2xl m-4">
                 <h1 class="text-2xl font-bold m-3 mb-3 ">Subscribe to Premium</h1>
                 <p class="mb-3 mx-3">Get rid of ads, see your analytics, boost your replies and unlock 20+ features</p>
-                <div class="button w-fit p-3 bg-blue-500 font-bold rounded-4xl py-1.5 mb-3.5 mx-3">Subscribe</div>
+                <div class="button w-fit p-3 bg-blue-500 font-bold rounded-4xl py-1.5 mb-3.5 mx-3 cursor-pointer">
+                    Subscribe</div>
             </div>
             <div class="news flex flex-col border border-zinc-700 rounded-2xl m-4 mt-0">
                 <div class="heading flex justify-between items-center p-3">
                     <h1 class="font-bold text-xl">Today's News</h1>
-                    <svg viewBox="0 0 24 24" class="w-5 invert" aria-hidden="true"
+                    <svg viewBox="0 0 24 24" class="w-5 invert cursor-pointer" aria-hidden="true"
                         class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1hjwoze r-12ym1je"
                         style="color: rgb(239, 243, 244);">
                         <g>
@@ -150,11 +279,13 @@
                     <p class="text-sm text-zinc-500 m-3 mt-0 font-normal ">7 hours ago · Sports · 65.6K posts</p>
                 </div>
                 <div class="headline hover:bg-zinc-950 cursor-pointer ">
-                    <h1 class="text-md font-bold m-3 mb-1">Microsoft Announces Layoffs of 4,800 Employees Including 1,600 from Xbox and... </h1>
+                    <h1 class="text-md font-bold m-3 mb-1">Microsoft Announces Layoffs of 4,800 Employees Including
+                        1,600 from Xbox and... </h1>
                     <p class="text-sm text-zinc-500 m-3 mt-0 font-normal ">4 hours ago · News · 48.8K posts</p>
                 </div>
                 <div class="headline hover:bg-zinc-950 cursor-pointer rounded-b-2xl ">
-                    <h1 class="text-md font-bold m-3 mb-1">FIFA Suspends Folarin Balogun's One-Match Ban After Red Card in World Cup...</h1>
+                    <h1 class="text-md font-bold m-3 mb-1">FIFA Suspends Folarin Balogun's One-Match Ban After Red Card
+                        in World Cup...</h1>
                     <p class="text-sm text-zinc-500 m-3 mt-0 font-normal ">6 hours ago · Sports · 645K posts</p>
                 </div>
             </div>
@@ -166,7 +297,14 @@
                         <h1 class="text-md font-bold m-3 mt-0">Rinku Singh</h1>
                     </div>
                     <div class="dots text-zinc-700 mr-2 hover:bg-blue-950 p-2 rounded-full cursor-pointer">
-                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                            <g>
+                                <path
+                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                </path>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="hashtag flex justify-between items-center hover:bg-zinc-950 cursor-pointer ">
@@ -175,7 +313,14 @@
                         <h1 class="text-md font-bold m-3 mt-0">#HappyBirthdayDhoni</h1>
                     </div>
                     <div class="dots text-zinc-700 mr-2 hover:bg-blue-950 p-2 rounded-full cursor-pointer">
-                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                            <g>
+                                <path
+                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                </path>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="hashtag flex justify-between items-center mb-1.5 hover:bg-zinc-950 cursor-pointer">
@@ -184,13 +329,20 @@
                         <h1 class="text-md font-bold m-3 mt-0">iOS 27 Beta 3</h1>
                     </div>
                     <div class="dots text-zinc-700 mr-2 hover:bg-blue-950 p-2 rounded-full cursor-pointer">
-                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                        <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                            class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                            <g>
+                                <path
+                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                </path>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <h2 class="text-blue-500 font-normal m-3 mt-0 cursor-pointer">Show More</h2>
             </div>
             <footer class="px-8 m-3 text-zinc-600 text-sm leading-7 mb-28">
-                Terms · Privacy · Cookies · Accessibility · 
+                Terms · Privacy · Cookies · Accessibility ·
                 Ads Info · More © 2026 X Corp.
             </footer>
         </div>
