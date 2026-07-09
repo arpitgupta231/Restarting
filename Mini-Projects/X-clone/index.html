@@ -11,21 +11,21 @@
 
 <body class="bg-black text-slate-200">
     <div class="flex container mx-auto max-w-7xl lg:px-20">
-        <div class="first w-13 lg:w-45.25 ">
-            <div
-                class=" px-3 py-2 logo mb-3.5 hover:bg-zinc-900 rounded-3xl w-fit mt-2.5 transition duration-150 ease-in ">
-                <svg viewBox="0 0 24 24" class="invert w-fit " width="32" height="32" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
-                    <g>
-                        <path
-                            d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
-                            fill="black"></path>
-                    </g>
-                </svg>
-            </div>
-            <div class="sidebar">
+        <div class="first w-13 hidden sm:block lg:w-45.25 ">
+            <div class="sidebar sticky top-0">
                 <ul class="flex flex-col p-1.5 space-y-3 items-center lg:items-start">
+                    <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
+                        transition duration-0.2 ease-in>
+                        <svg viewBox="0 0 24 24" class="invert w-fit " width="32" height="32" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i
+                                r-16y2uox r-8kz0gk">
+                            <g>
+                                <path
+                                    d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"
+                                    fill="black"></path>
+                            </g>
+                        </svg>
+                    </li>
                     <li class="flex items-center justify-start gap-2 p-2 hover:cursor-pointer hover:bg-zinc-800 w-[90%] hover:rounded-2xl"
                         transition duration-0.2 ease-in>
                         <svg class="invert w-6 h-6" viewBox="0 0 24 24" aria-hidden="true"
@@ -119,7 +119,7 @@
                 </ul>
             </div>
         </div>
-        <div class="second w-165 border border-zinc-700 border-y-black">
+        <div class="second min-w-0 flex-1 max-w-165 border border-zinc-700 border-y-black">
             <div class="sticky top-0 w-full">
 
                 <div class="top flex  h-12 mb-px bg-black">
@@ -156,20 +156,22 @@
                     Post</div>
             </div>
             <hr class="w-full text-zinc-800">
-            <div class="w-full text-blue-500 my-2 flex justify-center items-center cursor-pointer">Show 909 Posts</div>
+            <div class="w-full text-blue-500 my-2 flex justify-center items-center cursor-pointer">Show 909 Posts
+            </div>
             <hr class="w-full text-zinc-800">
             <div class="posts">
                 <div class="post w-full flex border-b pb-4 border-zinc-800">
                     <div class="img w-fit m-4 mr-0">
                         <img src="https://pbs.twimg.com/profile_images/2020017359524691968/PM9cvpU5_400x400.jpg"
-                        class="min-w-12 rounded-full " alt="">
+                            class="w-12 rounded-full " alt="">
                     </div>
-                    
+
                     <div class="content m-1.5">
                         <div class="posthead m-1 mb-0 items-center flex justify-between">
                             <div class="info flex items-center">
                                 <span class="self-start  font-bold hover:underline">World Cup 2026</span><span
-                                    class="text-zinc-600 self-start ml-1"> @ofootball__ · <span class="hover:underline">12h</span></span>
+                                    class="text-zinc-600 self-start ml-1"> @ofootball__ · <span
+                                        class="hover:underline">12h</span></span>
                             </div>
                             <div
                                 class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
@@ -184,50 +186,24 @@
                             </div>
                         </div>
 
-                        <div class="m-1.5 mt-0">Hey @grok delete the person who was protected and supported by FIFA and UEFA !!</div>
-                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMoca85acAAanzS?format=jpg&name=medium" alt="">
+                        <div class="m-1.5 mt-0">Hey @grok delete the person who was protected and supported by FIFA
+                            and UEFA !!</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 w-[90%]"
+                            src="https://pbs.twimg.com/media/HMoca85acAAanzS?format=jpg&name=medium" alt="">
                     </div>
                 </div>
                 <div class="post w-full flex border-b pb-4 border-zinc-800">
                     <div class="img w-fit m-4 mr-0">
                         <img src="https://pbs.twimg.com/profile_images/2020017359524691968/PM9cvpU5_400x400.jpg"
-                        class="w-12 rounded-full " alt="">
+                            class="w-12 rounded-full " alt="">
                     </div>
-                    
-                    <div class="content m-1.5">
-                        <div class="posthead m-1 mb-0 items-center w-full flex justify-between">
-                            <div class="info flex items-center">
-                                <span class="self-start  font-bold hover:underline">Ken</span><span
-                                    class="text-zinc-600 self-start ml-1">@kennethwrii<span class="hover:underline"></span></span>
-                            </div>
-                            <div
-                                class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
-                                <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
-                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
-                                    <g>
-                                        <path
-                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
 
-                        <div class="m-1.5 mt-0">Which 3 project run is better ??</div>
-                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMp-JqAWoAAF6pr?format=jpg&name=large" alt="">
-                    </div>
-                </div>
-                <div class="post flex w-full border-b pb-4 border-zinc-800">
-                    <div class="img w-fit m-4 mr-0">
-                        <img src="https://pbs.twimg.com/profile_images/2035239520162258947/9SmWhmgs_400x400.jpg"
-                        class="w-12 rounded-full " alt="">
-                    </div>
-                    
                     <div class="content m-1.5">
                         <div class="posthead m-1 mb-0 items-center flex justify-between">
                             <div class="info flex items-center">
-                                <span class="self-start  font-bold hover:underline">Jainal Momin</span><span
-                                    class="text-zinc-600 self-start ml-1">@JainalMomin<span class="hover:underline">· 9h</span></span>
+                                <span class="self-start  font-bold hover:underline">World Cup 2026</span><span
+                                    class="text-zinc-600 self-start ml-1"> @ofootball__ · <span
+                                        class="hover:underline">12h</span></span>
                             </div>
                             <div
                                 class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
@@ -242,21 +218,56 @@
                             </div>
                         </div>
 
-                        <div class="m-1.5 mt-0">Hey @Grok can you please tell me how many country's Elon Musk can buy from this much money?</div>
-                        <img class="my-4 rounded-4xl border border-zinc-700 max-w-106 " src="https://pbs.twimg.com/media/HMsL78tboAAAJ4i?format=jpg&name=large" alt="">
+                        <div class="m-1.5 mt-0">Hey @grok delete the person who was protected and supported by FIFA
+                            and UEFA !!</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 w-[90%]"
+                            src="https://pbs.twimg.com/media/HMoca85acAAanzS?format=jpg&name=medium" alt="">
+                    </div>
+                </div>
+                <div class="post w-full flex border-b pb-4 border-zinc-800">
+                    <div class="img w-fit m-4 mr-0">
+                        <img src="https://pbs.twimg.com/profile_images/2020017359524691968/PM9cvpU5_400x400.jpg"
+                            class="w-12 rounded-full " alt="">
+                    </div>
+
+                    <div class="content m-1.5">
+                        <div class="posthead m-1 mb-0 items-center flex justify-between">
+                            <div class="info flex items-center">
+                                <span class="self-start  font-bold hover:underline">World Cup 2026</span><span
+                                    class="text-zinc-600 self-start ml-1"> @ofootball__ · <span
+                                        class="hover:underline">12h</span></span>
+                            </div>
+                            <div
+                                class="dots text-zinc-700  hover:bg-blue-950 p-2 rounded-full cursor-pointer self-start z-0">
+                                <svg viewBox="0 0 24 24" class="w-4 invert" aria-hidden="true"
+                                    class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi">
+                                    <g>
+                                        <path
+                                            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="m-1.5 mt-0">Hey @grok delete the person who was protected and supported by FIFA
+                            and UEFA !!</div>
+                        <img class="my-4 rounded-4xl border border-zinc-700 w-[90%]"
+                            src="https://pbs.twimg.com/media/HMoca85acAAanzS?format=jpg&name=medium" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="third mt w-md flex flex-col">
-            <div class="search flex w-sm py-2 bg-black justify-center sticky top-0">
+        <div class="third mt hidden lg:w-[350px] lg:flex flex-col">
+            <div class="search flex w-[384px] py-2 bg-black justify-center sticky top-0">
                 <input type="text" name=""
                     class="w-[90%] border h-10 border-zinc-700 rounded-2xl px-2  focus:border-3 focus:border-blue-500 outline-0"
                     placeholder="Search" id="">
             </div>
             <div class="prem flex flex-col border border-zinc-700 rounded-2xl m-4">
                 <h1 class="text-2xl font-bold m-3 mb-3 ">Subscribe to Premium</h1>
-                <p class="mb-3 mx-3">Get rid of ads, see your analytics, boost your replies and unlock 20+ features</p>
+                <p class="mb-3 mx-3">Get rid of ads, see your analytics, boost your replies and unlock 20+ features
+                </p>
                 <div class="button w-fit p-3 bg-blue-500 font-bold rounded-4xl py-1.5 mb-3.5 mx-3 cursor-pointer">
                     Subscribe</div>
             </div>
@@ -284,7 +295,8 @@
                     <p class="text-sm text-zinc-500 m-3 mt-0 font-normal ">4 hours ago · News · 48.8K posts</p>
                 </div>
                 <div class="headline hover:bg-zinc-950 cursor-pointer rounded-b-2xl ">
-                    <h1 class="text-md font-bold m-3 mb-1">FIFA Suspends Folarin Balogun's One-Match Ban After Red Card
+                    <h1 class="text-md font-bold m-3 mb-1">FIFA Suspends Folarin Balogun's One-Match Ban After Red
+                        Card
                         in World Cup...</h1>
                     <p class="text-sm text-zinc-500 m-3 mt-0 font-normal ">6 hours ago · Sports · 645K posts</p>
                 </div>
