@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.todo+.todo{
+    border-top: 1px solid rgba(75, 4, 119, 0.671);
+
+}
